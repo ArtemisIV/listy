@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lara's List</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 30px 0;
+      background-color: #1f1f1f;
+      font-size: 2rem;
+    }
+    .movie-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .movie-item {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .movie-item:hover {
+      transform: scale(1.05);
+    }
+    .movie-link {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .movie-link:hover {
+      color: #0F68DB;
+    }
+  </style>
+</head>
+<body>
+
+<header>Lara's List</header>
+
+<input type="text" id="searchInput" placeholder="Search movies or shows...">
+
+<div class="movie-list">
+  <div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/spider-man" target="_blank">Spider-Man (OG)</a>
+  </div>
+  <div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/spider-man-2-2" target="_blank">Spider-Man 2</a>
+  </div>
+  <div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/spider-man-3" target="_blank">Spider-Man 3</a>
+  </div>
+  <div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-amazing-spider-man" target="_blank">The Amazing Spider-Man</a>
+  </div>
+  <div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-amazing-spider-man-2" target="_blank">The Amazing Spider-Man 2</a>
+  </div>
+  <div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/spider-man-homecoming" target="_blank">Spider-Man: Homecoming</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/spider-man-far-from-home" target="_blank">Spider-Man: Far From Home</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/spider-man-no-way-home" target="_blank">Spider-Man: No Way Home</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/batman-2" target="_blank">Batman</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/batman-returns-2" target="_blank">Batman Returns</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/batman-forever" target="_blank">Batman Forever</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/batman-robin" target="_blank">Batman & Robin</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/batman-begins" target="_blank">Batman Begins</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-dark-knight" target="_blank">The Dark Knight</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-dark-knight-rises" target="_blank">The Dark Knight Rises</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-batman" target="_blank">The Batman</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/fear-street-1994" target="_blank">Fear Street Part 1: 1994</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/fear-street-1978" target="_blank">Fear Street Part 2: 1978</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/fear-street-1666" target="_blank">Fear Street Part 3: 1666</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-lego-movie" target="_blank">The Lego Movie</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-lego-movie-2-the-second-part" target="_blank">The Lego Movie 2: The Second Part</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-lego-batman-movie" target="_blank">The Lego Batman Movie</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-lego-ninjago-movie" target="_blank">The Lego Ninjago Movie</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/alvin-and-the-chipmunks" target="_blank">Alvin and the Chipmunks</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/alvin-and-the-chipmunks-the-squeakquel" target="_blank">Alvin and the Chipmunks: The Squeakquel</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/alvin-and-the-chipmunks-chipwrecked" target="_blank">Alvin and the Chipmunks: Chipwrecked</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/alvin-and-the-chipmunks-the-road-chip" target="_blank">Alvin and the Chipmunks: The Road Chip</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/365-days" target="_blank">365 Days</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/joker" target="_blank">Joker</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/alive" target="_blank">#Alive</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/murder-mystery" target="_blank">Murder Mystery</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/forrest-gump-2" target="_blank">Forrest Gump</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/barbie" target="_blank">Barbie</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/oppenheimer" target="_blank">Oppenheimer</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-conjuring" target="_blank">The Conjuring</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/countdown" target="_blank">Countdown</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-nun" target="_blank">The Nun</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/annabelle" target="_blank">Annabelle</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-exorcist" target="_blank">The Exorcist</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/aquaman" target="_blank">Aquaman</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/lucy" target="_blank">Lucy</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-mask" target="_blank">The Mask</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/venom" target="_blank">Venom (2018)</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/venom-2" target="_blank">Venom (2005)</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-worst-witch-3" target="_blank">The Worst Witch</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-adam-project" target="_blank">The Adam Project</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-emoji-movie" target="_blank">The Emoji Movie</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/yesterday" target="_blank">Yesterday</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/spirited-away-2" target="_blank">Spirited Away</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/matilda" target="_blank">Matilda</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/the-boss-baby" target="_blank">The Boss Baby</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/movie/trolls" target="_blank">Trolls</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/tv-show/the-walking-dead" target="_blank">The Walking Dead</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/tv-show/money-heist" target="_blank">Money Heist</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/tv-show/the-good-doctor-3-2" target="_blank">The Good Doctor</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/tv-show/the-rookie" target="_blank">The Rookie</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://popcornmovies.org/tv-show/demon-slayer-kimetsu-no-yai-1-1-1ba" target="_blank">Demon Slayer: Kimetsu no Yaiba</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/the-queens-gambit-87739" target="_blank">The Queens Gambit</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/young-sheldon-71728" target="_blank">Young Sheldon</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/sex-education-81356" target="_blank">Sex Education</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/hunter-x-hunter-46298" target="_blank">Hunter X Hunter</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/jane-the-virgin-61418" target="_blank">Janne The Virgin</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/movie/never-have-i-ever-1231155" target="_blank">Never Have I Ever</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/movie/a-whisker-away-667520" target="_blank">A Whisker Away</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/jujutsu-kaisen-95479" target="_blank">Jujustsu Kaisen</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/bojack-horseman-61222" target="_blank">Bojack Horseman</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/stranger-things-66732" target="_blank">Stranger Things</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/gora-153871" target="_blank">Gora</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/the-smurfs-5687" target="_blank">The Smurfs (2D)</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/peppa-pig-12225" target="_blank">Peppa Pig</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/spongebob-squarepants-387" target="_blank">SpongeBob Squarepants</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/masha-and-the-bear-46080" target="_blank">Masha and The Bear</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/masha-and-the-bear-46080" target="_blank">The Smurfs (3D)</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/teletubbies-211069" target="_blank">Teletubbies (2022)</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/teletubbies-1682" target="_blank">Teletubbies (1997)</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/teletubbies-200900" target="_blank">Teletubbies (2015)</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/adventure-time-15260" target="_blank">Adventure Time</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/winx-club-1848" target="_blank">Winx Club</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/scooby-doo-mystery-incorporated-18123" target="_blank">Scooby-Doo Mystery Incorporated</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/miraculous-tales-of-ladybug-cat-noir-65334" target="_blank">Miraculous: Tales of Ladybug & Cat Noir</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/alrawabi-school-for-girls-88516" target="_blank">AlRawabi School for Girls</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/wednesday-119051" target="_blank">Wednesday</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/xo-kitty-195670" target="_blank">XO, Kitty</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/heartstopper-124834" target="_blank">Heartstopper</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/all-of-us-are-dead-99966" target="_blank">All of Us Are Dead</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/all-of-us-are-dead-99966" target="_blank">A Good Girls Guide to Murder</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/riverdale-69050" target="_blank">Riverdale</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/girl-from-nowhere-83639" target="_blank">Girl From Nowhere</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/gymnastics-academy-a-second-chance-208527" target="_blank">Gymnastics Academy</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/the-healing-powers-of-dude-97441" target="_blank">The Healing Powers of Dude</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/greenhouse-academy-73602" target="_blank">GreenHouse Academy</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/sonic-boom-62211" target="_blank">Sonic Boom</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/mako-island-of-secrets-42025" target="_blank">Mako Mermaids</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/the-thundermans-58981" target="_blank">The Thundermands</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/victorious-31251" target="_blank">Victorious</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/sonic-prime-115577" target="_blank">Sonic Prime</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/sonic-x-10926" target="_blank">Sonic X</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/my-little-pony-friendship-is-magic-33765" target="_blank">My Little Pony Friendship is Magic</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/alexa-katie-76874" target="_blank">Alexa & Katie</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/dead-to-me-81357" target="_blank">Dead to Me</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/better-call-saul-60059" target="_blank">Better Call Saul</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/how-to-sell-drugs-online-fast-88236" target="_blank">How to Sell Drugs Online (Fast)</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/baby-reindeer-241259" target="_blank">Baby Reindeer</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/the-end-of-the-fing-world-74577" target="_blank">The End of the F***ing World</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/russian-doll-84977" target="_blank">Russian Doll</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/shameless-34307" target="_blank">Shameless</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/snowpiercer-79680" target="_blank">Snowpiercer</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/suits-37680" target="_blank">Suits</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/lucifer-63174" target="_blank">Lucifer</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/movie/interstellar-157336" target="_blank">Interstellar</a>
+  </div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/movie/mean-girls-10625" target="_blank">Mean Girls</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/you-78191" target="_blank">You</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/house-1408" target="_blank">House</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/the-disastrous-life-of-saiki-k-67676" target="_blank">Saiki K: The Disastrous Life of Saiki K.</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/death-note-13916" target="_blank">Death Note</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/chilling-adventures-of-sabrina-79242" target="_blank">Chilling Adventures of Sabrina</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/ginny-georgia-117581" target="_blank">Ginny & Georgia</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/emily-in-paris-82596" target="_blank">Emily in Paris</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/orange-is-the-new-black-1424" target="_blank">Orange is the new Black</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/squid-game-93405" target="_blank">Squid Game</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/bridgerton-91239" target="_blank">Bridgerton</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/the-umbrella-academy-75006" target="_blank">The Umbrella Academy</a>
+  </div></div><div class="movie-item">
+    <a class="movie-link" href="https://tmovie.tv/tv/teen-titans-go-45140" target="_blank">Teen Titans GO!</a>
+  </div></div><div class="movie-item">
+</div>
+
+<script>
+const input = document.getElementById('searchInput');
+input.addEventListener('keyup', function() {
+  const filter = input.value.toLowerCase();
+  const items = document.querySelectorAll('.movie-item');
+  items.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    item.style.display = text.includes(filter) ? '' : 'none';
+  });
+});
+</script>
+
+</body>
+</html>
